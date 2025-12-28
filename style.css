@@ -1,62 +1,85 @@
+/* Reset asas */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   margin: 0;
   background: #f4f6f8;
   color: #333;
 }
 
+/* Header */
 header {
   background: #005f73;
   color: white;
-  padding: 20px;
+  padding: 16px;
   text-align: center;
 }
 
+/* Navigasi - Mobile First */
 nav {
+  position: sticky;
+  bottom: 0;
   display: flex;
   justify-content: space-around;
   background: #0a9396;
+  padding: 8px 0;
 }
 
 nav a {
+  flex: 1;
+  text-align: center;
   color: white;
   text-decoration: none;
-  padding: 12px;
-  font-weight: bold;
+  font-size: 12px;
 }
 
-nav a:hover {
-  background: #94d2bd;
-  color: #000;
-}
-
+/* Kandungan */
 main {
-  padding: 20px;
+  padding: 16px;
+  padding-bottom: 80px; /* ruang untuk nav bawah */
 }
 
+/* Kad */
 .card {
   background: white;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
 
-  input, button {
+/* Borang */
+input, button {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 14px;
+  font-size: 16px;
+  margin-top: 6px;
 }
 
 button {
   background: #005f73;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 10px;
 }
 
-button:hover {
-  background: #0a9396;
-}
+/* Desktop / Tablet */
+@media (min-width: 768px) {
+  nav {
+    position: relative;
+    top: 0;
+  }
 
+  nav a {
+    font-size: 14px;
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
 }
