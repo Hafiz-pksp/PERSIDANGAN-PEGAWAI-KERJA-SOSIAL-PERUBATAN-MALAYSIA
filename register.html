@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran Persidangan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Pendaftaran Peserta</h1>
+  <p>Versi Dummy</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="schedule.html">Atur Cara</a>
+  <a href="speakers.html">Penceramah</a>
+  <a href="info.html">Maklumat</a>
+  <a href="register.html">Pendaftaran</a>
+</nav>
+
+<main>
+  <div class="card">
+    <form onsubmit="return daftarDummy()">
+      
+      <label>Nama Penuh</label><br>
+      <input type="text" required><br><br>
+
+      <label>Emel</label><br>
+      <input type="email" required><br><br>
+
+      <label>Organisasi</label><br>
+      <input type="text"><br><br>
+
+      <button type="submit">Daftar</button>
+    </form>
+
+    <p id="mesej" style="display:none; color:green; margin-top:15px;">
+      ✅ Pendaftaran diterima (versi dummy).
+    </p>
+  </div>
+</main>
+
+<script>
+function daftarDummy() {
+  document.getElementById("mesej").style.display = "block";
+  return false; // elak refresh
+}
+</script>
+
+</body>
+</html>
