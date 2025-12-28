@@ -40,4 +40,23 @@ main {
   margin-bottom: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+button {
+  background: #005f73;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0a9396;
+}
+
 }
